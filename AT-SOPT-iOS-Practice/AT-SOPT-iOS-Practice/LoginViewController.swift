@@ -11,10 +11,10 @@ class LoginViewController: UIViewController {
     
     private let imageView: UIImageView = {
         let imageview = UIImageView(frame: CGRect(x: 128, y: 130, width: 150, height: 150))
-        imageview.image = UIImage(named: "image 52.png")
-        
+        imageview.image = UIImage(named: "icon.png")
         return imageview
     }()
+    
     private let titleLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 32, y: 281, width: 335, height: 80))
         label.text = "동네라서 가능한 모든것\n당근에서 가까운 이웃과 함께해요."
@@ -63,9 +63,9 @@ class LoginViewController: UIViewController {
         button.addTarget(self, action: #selector(LoginViewController.loginButtonDidTapped), for: .touchUpInside)
         return button
     }()
+    
     @objc
-    private func loginButtonDidTapped()
-    {
+    private func loginButtonDidTapped() {
         pushToWelcome()
         //presentToWelcomeVC()
     }
@@ -76,8 +76,7 @@ class LoginViewController: UIViewController {
         self.present(welcomeViewController, animated: true)
     }
     
-    private func pushToWelcome()
-    {
+    private func pushToWelcome() {
         let welcomeVC = WelcomeViewController()
         welcomeVC.id = idTextField.text
         self.navigationController?.pushViewController(welcomeVC, animated: true)
@@ -101,11 +100,11 @@ class LoginViewController: UIViewController {
     {
 //        if(!(idTextField.text ?? "").isEmpty || !(passwordTextField.text ?? "").isEmpty)
 //        {
-//            loginButton.isEnabled = false
+//            loginButton.isEnabled = true
 //        }
 //        else
 //        {
-//            loginButton.isEnabled = true
+//            loginButton.isEnabled = false
 //        }
     }
 }

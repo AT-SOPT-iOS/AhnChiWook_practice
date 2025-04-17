@@ -10,14 +10,6 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     var id: String?
-
-    private func bindID() {
-        guard let id, !id.isEmpty else {
-            self.welcomeLabel.text = "익명의 사용자님 반가워요!"
-            return
-        }
-        self.welcomeLabel.text = "\(id)님 반가워요!"
-    }
     
     private let welcomeLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 50, y: 125, width: 300, height: 50))
@@ -47,6 +39,7 @@ class WelcomeViewController: UIViewController {
         
         return imageview
     }()
+    
 //    private func popView()
 //    {
 //        self.navigationController?.popViewController(animated: true)
@@ -67,7 +60,14 @@ class WelcomeViewController: UIViewController {
         logoutAlert.addAction(cancelAction)
         present(logoutAlert, animated: true)
 //        popView()
-        
+    }
+    
+    private func bindID() {
+        guard let id, !id.isEmpty else {
+            self.welcomeLabel.text = "익명의 사용자님 반가워요!"
+            return
+        }
+        self.welcomeLabel.text = "\(id)님 반가워요!"
     }
     
     override func viewDidLoad() {
