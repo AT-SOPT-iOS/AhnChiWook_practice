@@ -15,9 +15,7 @@ class WelcomeViewController: UIViewController {
         let label = UILabel(frame: CGRect(x: 50, y: 125, width: 300, height: 50))
         label.textColor = .white
         label.textAlignment = .center
-        label.font = UIFont(name: "Pretendard-SemiBold", size: 22)
-        //label.font.withSize(40)
-        
+        label.font = .pretendard(.semiBold, size: 22)
         return label
     }()
     
@@ -27,7 +25,7 @@ class WelcomeViewController: UIViewController {
         button.layer.cornerRadius = 8
         button.setTitle("다시 로그인하기", for: .normal)
         button.setTitleColor(.systemOrange, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 24)
+        button.titleLabel?.font = .pretendard(.bold, size: 24)
         button.addTarget(self, action: #selector(ReloginButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -36,7 +34,6 @@ class WelcomeViewController: UIViewController {
         let imageview = UIImageView(frame: CGRect(x: 128, y: 220, width: 150, height: 180))
         let image = UIImage(named: "carrot.jpg")
         imageview.image = image
-        
         return imageview
     }()
     
@@ -74,7 +71,6 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .systemOrange
         setLayout()
-        
         bindID()
     }
     
@@ -84,8 +80,12 @@ class WelcomeViewController: UIViewController {
     }
     
     private func setLayout() {
-        [reLoginButton, imageView, welcomeLabel].forEach {
-            self.view.addSubview($0)
-        }
+//        [reLoginButton, imageView, welcomeLabel].forEach {
+//            self.view.addSubview($0)
+//        }
+        view.addSubviews(
+            reLoginButton,
+            imageView,
+            welcomeLabel)
     }
 }
