@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         //button.titleLabel?.font = UIFont(name: "Pretendard-Black", size: 24)
         button.titleLabel?.font = .pretendard(.black, size: 24)
-        button.addTarget(self, action: #selector(LoginViewController.loginButtonDidTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(loginButtonDidTapped), for: .touchUpInside)
         return button
     }()
     

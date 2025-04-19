@@ -1,5 +1,5 @@
 //
-//  loginViewController_Delegate.swift
+//  LoginViewController_Closure.swift
 //  AT-SOPT-iOS-Practice
 //
 //  Created by 안치욱 on 4/20/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController_Delegate: UIViewController, DataBindDelegate {
+class LoginViewController_Closure: UIViewController {
     
     private let imageView: UIImageView = {
         let imageview = UIImageView(frame: CGRect(x: 128, y: 130, width: 150, height: 150))
@@ -73,19 +73,19 @@ class LoginViewController_Delegate: UIViewController, DataBindDelegate {
         //presentToWelcomeVC()
     }
     
-    func dataBind(id: String) {
-        idTextField.text = id
-        print("\(id)")
-    }
-    
     private func presentToWelcomeVC() {
-        let welcomeViewController = WelcomeViewController_Delegate()
-        welcomeViewController.modalPresentationStyle = .formSheet
-        self.present(welcomeViewController, animated: true)
+        let welcomeVC = WelcomeViewController_Closure()
+        welcomeVC.modalPresentationStyle = .formSheet
+        self.present(welcomeVC, animated: true)
     }
     
     private func pushToWelcome() {
-        let welcomeVC = WelcomeViewController_Delegate()
+        let welcomeVC = WelcomeViewController_Closure()
+        welcomeVC.loginDataCompletion = { [weak self] data in
+            guard let self else { return }
+            print("클로져가 가져온 id가 머냐면요~~? ", data)
+            self.idTextField.text = data
+        }
         welcomeVC.id = idTextField.text
         self.navigationController?.pushViewController(welcomeVC, animated: true)
     }
@@ -109,13 +109,13 @@ class LoginViewController_Delegate: UIViewController, DataBindDelegate {
     // - TODO:  구현해야하는 함수
     private func loginBtnEnable()
     {
-        //        if(!(idTextField.text ?? "").isEmpty || !(passwordTextField.text ?? "").isEmpty)
-        //        {
-        //            loginButton.isEnabled = true
-        //        }
-        //        else
-        //        {
-        //            loginButton.isEnabled = false
-        //        }
+//        if(!(idTextField.text ?? "").isEmpty || !(passwordTextField.text ?? "").isEmpty)
+//        {
+//            loginButton.isEnabled = true
+//        }
+//        else
+//        {
+//            loginButton.isEnabled = false
+//        }
     }
 }
