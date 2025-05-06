@@ -1,13 +1,13 @@
 //
-//  LoginViewController.swift
-//  week1
+//  LoginViewController_Closure.swift
+//  AT-SOPT-iOS-Practice
 //
-//  Created by 안치욱 on 4/5/25.
+//  Created by 안치욱 on 4/20/25.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController_Closure: UIViewController {
     
     private let imageView: UIImageView = {
         let imageview = UIImageView(frame: CGRect(x: 128, y: 130, width: 150, height: 150))
@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
         label.textColor = .black
         label.textAlignment = .center
         label.numberOfLines = 2
-        label.font = UIFont(name: "Pretendard-SemiBold", size: 20)
+        label.font = .pretendard(.semiBold, size: 20) //label.font = UIFont(name: "Pretendard-SemiBold", size: 20)
         //label.font = .boldSystemFont(ofSize: 16)
         return label
     }()
@@ -34,7 +34,8 @@ class LoginViewController: UIViewController {
         textField.addLeftPadding()
         textField.clearButtonMode = .always
         textField.textColor = .black
-        textField.font = UIFont(name: "Pretendard-SemiBold", size: 14)
+        //textField.font = UIFont(name: "Pretendard-SemiBold", size: 14)
+        textField.font = .pretendard(.semiBold, size: 14)
         textField.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
         return textField
     }()
@@ -48,7 +49,8 @@ class LoginViewController: UIViewController {
         textField.clearButtonMode = .always
         textField.isSecureTextEntry = true
         textField.textColor = .black
-        textField.font = UIFont(name: "Pretendard-SemiBold", size: 14)
+        //textField.font = UIFont(name: "Pretendard-SemiBold", size: 14)
+        textField.font = .pretendard(.semiBold, size: 14)
         textField.backgroundColor = UIColor(red: 221/255, green: 222/255, blue: 227/255, alpha: 1)
         return textField
     }()
@@ -59,8 +61,9 @@ class LoginViewController: UIViewController {
         button.setTitle("로그인하기", for: .normal)
         button.layer.cornerRadius = 8
         button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Pretendard-Black", size: 24)
-        button.addTarget(self, action: #selector(LoginViewController.loginButtonDidTapped), for: .touchUpInside)
+        //button.titleLabel?.font = UIFont(name: "Pretendard-Black", size: 24)
+        button.titleLabel?.font = .pretendard(.black, size: 24)
+        button.addTarget(self, action: #selector(loginButtonDidTapped), for: .touchUpInside)
         return button
     }()
     
@@ -71,17 +74,21 @@ class LoginViewController: UIViewController {
     }
     
     private func presentToWelcomeVC() {
-        let welcomeViewController = WelcomeViewController()
-        welcomeViewController.modalPresentationStyle = .formSheet
-        self.present(welcomeViewController, animated: true)
+        let welcomeVC = WelcomeViewController_Closure()
+        welcomeVC.modalPresentationStyle = .formSheet
+        self.present(welcomeVC, animated: true)
     }
     
     private func pushToWelcome() {
-        let welcomeVC = WelcomeViewController()
+        let welcomeVC = WelcomeViewController_Closure()
+        welcomeVC.loginDataCompletion = { [weak self] data in
+            guard let self else { return }
+            print("클로져가 가져온 id가 머냐면요~~? ", data)
+            self.idTextField.text = data
+        }
         welcomeVC.id = idTextField.text
         self.navigationController?.pushViewController(welcomeVC, animated: true)
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,9 +98,13 @@ class LoginViewController: UIViewController {
     }
     
     private func setLayout() {
-        [imageView, titleLabel, idTextField, passwordTextField, loginButton].forEach {
-            self.view.addSubview($0)
-        }
+        view.addSubviews(
+            imageView,
+            titleLabel,
+            idTextField,
+            passwordTextField,
+            loginButton
+        )
     }
     // - TODO:  구현해야하는 함수
     private func loginBtnEnable()
@@ -107,23 +118,4 @@ class LoginViewController: UIViewController {
 //            loginButton.isEnabled = false
 //        }
     }
-}
-public extension UITextField {
-    
-    func setPlaceholderColor(_ placeholderColor: UIColor) {
-        attributedPlaceholder = NSAttributedString(
-            string: placeholder ?? "",
-            attributes: [
-                .foregroundColor: placeholderColor,
-                .font: font
-            ].compactMapValues { $0 }
-        )
-    }
-    
-    func addLeftPadding() {
-      let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
-      self.leftView = paddingView
-      self.leftViewMode = ViewMode.always
-    }
-    
 }
