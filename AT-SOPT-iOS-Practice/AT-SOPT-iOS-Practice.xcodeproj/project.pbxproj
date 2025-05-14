@@ -7,34 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6659C622DD387720018B574 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C3B2DD387720018B574 /* Pretendard-Black.ttf */; };
+		F6659C632DD387720018B574 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C3C2DD387720018B574 /* Pretendard-Bold.ttf */; };
+		F6659C642DD387720018B574 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C3D2DD387720018B574 /* Pretendard-ExtraBold.ttf */; };
+		F6659C652DD387720018B574 /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C3E2DD387720018B574 /* Pretendard-ExtraLight.ttf */; };
+		F6659C662DD387720018B574 /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C3F2DD387720018B574 /* Pretendard-Light.ttf */; };
+		F6659C672DD387720018B574 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C402DD387720018B574 /* Pretendard-Medium.ttf */; };
+		F6659C682DD387720018B574 /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C412DD387720018B574 /* Pretendard-Regular.ttf */; };
+		F6659C692DD387720018B574 /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C422DD387720018B574 /* Pretendard-SemiBold.ttf */; };
+		F6659C6A2DD387720018B574 /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6659C432DD387720018B574 /* Pretendard-Thin.ttf */; };
+		F6659C6B2DD387720018B574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6659C452DD387720018B574 /* Assets.xcassets */; };
+		F6659C6D2DD387720018B574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6659C602DD387720018B574 /* LaunchScreen.storyboard */; };
+		F6659C6E2DD387720018B574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C352DD387720018B574 /* AppDelegate.swift */; };
+		F6659C6F2DD387720018B574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C362DD387720018B574 /* SceneDelegate.swift */; };
+		F6659C702DD387720018B574 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C382DD387720018B574 /* UIFont+.swift */; };
+		F6659C712DD387720018B574 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C392DD387720018B574 /* UIView+.swift */; };
+		F6659C722DD387720018B574 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C472DD387720018B574 /* LoginViewController.swift */; };
+		F6659C732DD387720018B574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C482DD387720018B574 /* ViewController.swift */; };
+		F6659C742DD387720018B574 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C492DD387720018B574 /* WelcomeViewController.swift */; };
+		F6659C752DD387720018B574 /* AutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C4B2DD387720018B574 /* AutoLayoutViewController.swift */; };
+		F6659C762DD387720018B574 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C4C2DD387720018B574 /* ScrollViewController.swift */; };
+		F6659C772DD387720018B574 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C4E2DD387720018B574 /* LoginViewController_Closure.swift */; };
+		F6659C782DD387720018B574 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C4F2DD387720018B574 /* WelcomeViewController_Closure.swift */; };
+		F6659C792DD387720018B574 /* LoginViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C512DD387720018B574 /* LoginViewController_Delegate.swift */; };
+		F6659C7A2DD387720018B574 /* WelcomeViewController_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C522DD387720018B574 /* WelcomeViewController_Delegate.swift */; };
+		F6659C7B2DD387720018B574 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C552DD387720018B574 /* ItemCollectionViewCell.swift */; };
+		F6659C7C2DD387720018B574 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C562DD387720018B574 /* ItemModel.swift */; };
+		F6659C7D2DD387720018B574 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C572DD387720018B574 /* ItemViewController.swift */; };
+		F6659C7E2DD387720018B574 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C592DD387720018B574 /* ChatModel.swift */; };
+		F6659C7F2DD387720018B574 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C5A2DD387720018B574 /* ChatTableViewCell.swift */; };
+		F6659C802DD387720018B574 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C5B2DD387720018B574 /* ChatViewController.swift */; };
+		F6659C8A2DD42A4E0018B574 /* NicknameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C862DD42A4E0018B574 /* NicknameResponse.swift */; };
+		F6659C8B2DD42A4E0018B574 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C832DD42A4E0018B574 /* InfoViewController.swift */; };
+		F6659C8C2DD42A4E0018B574 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C852DD42A4E0018B574 /* NetworkError.swift */; };
+		F6659C8D2DD42A4E0018B574 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C892DD42A4E0018B574 /* ResponseModel.swift */; };
+		F6659C8E2DD42A4E0018B574 /* APISignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C842DD42A4E0018B574 /* APISignUpViewController.swift */; };
+		F6659C8F2DD42A4E0018B574 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C882DD42A4E0018B574 /* RequestModel.swift */; };
+		F6659C902DD42A4E0018B574 /* GetInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C822DD42A4E0018B574 /* GetInfoService.swift */; };
+		F6659C912DD42A4E0018B574 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C872DD42A4E0018B574 /* RegisterService.swift */; };
+		F6659C932DD4381E0018B574 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C922DD438150018B574 /* UITextField+.swift */; };
+		F6659C952DD4425E0018B574 /* APIWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C942DD442480018B574 /* APIWelcomeViewController.swift */; };
+		F6659C972DD45C590018B574 /* APILoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C962DD45C4D0018B574 /* APILoginViewController.swift */; };
+		F6659C992DD464B50018B574 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C982DD464B50018B574 /* LoginRequest.swift */; };
+		F6659C9E2DD465360018B574 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C9D2DD465360018B574 /* AuthService.swift */; };
+		F6659CA02DD46BC10018B574 /* LoginNicknameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659C9F2DD46BB70018B574 /* LoginNicknameResponse.swift */; };
+		F6659CA22DD46C140018B574 /* NicknameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659CA12DD46C140018B574 /* NicknameService.swift */; };
+		F6659CA62DD47B020018B574 /* NicknameEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659CA52DD47B020018B574 /* NicknameEditViewController.swift */; };
+		F6659CA82DD47B440018B574 /* EditNickNameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659CA72DD47B3A0018B574 /* EditNickNameService.swift */; };
+		F6659CAA2DD47DD50018B574 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659CA92DD47DD50018B574 /* UserSession.swift */; };
+		F6659CAC2DD482590018B574 /* EditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6659CAB2DD482590018B574 /* EditResponse.swift */; };
 		F66811072DCA2909004DD140 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F66811062DCA2909004DD140 /* Then */; };
 		F668110A2DCA2914004DD140 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F66811092DCA2914004DD140 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6659C352DD387720018B574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6659C362DD387720018B574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6659C382DD387720018B574 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		F6659C392DD387720018B574 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F6659C3B2DD387720018B574 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		F6659C3C2DD387720018B574 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		F6659C3D2DD387720018B574 /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F6659C3E2DD387720018B574 /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F6659C3F2DD387720018B574 /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		F6659C402DD387720018B574 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		F6659C412DD387720018B574 /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		F6659C422DD387720018B574 /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		F6659C432DD387720018B574 /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		F6659C452DD387720018B574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6659C472DD387720018B574 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F6659C482DD387720018B574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6659C492DD387720018B574 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F6659C4B2DD387720018B574 /* AutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewController.swift; sourceTree = "<group>"; };
+		F6659C4C2DD387720018B574 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		F6659C4E2DD387720018B574 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
+		F6659C4F2DD387720018B574 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
+		F6659C512DD387720018B574 /* LoginViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Delegate.swift; sourceTree = "<group>"; };
+		F6659C522DD387720018B574 /* WelcomeViewController_Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Delegate.swift; sourceTree = "<group>"; };
+		F6659C552DD387720018B574 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6659C562DD387720018B574 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		F6659C572DD387720018B574 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		F6659C592DD387720018B574 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		F6659C5A2DD387720018B574 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		F6659C5B2DD387720018B574 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F6659C5E2DD387720018B574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6659C5F2DD387720018B574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6659C822DD42A4E0018B574 /* GetInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoService.swift; sourceTree = "<group>"; };
+		F6659C832DD42A4E0018B574 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		F6659C842DD42A4E0018B574 /* APISignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISignUpViewController.swift; sourceTree = "<group>"; };
+		F6659C852DD42A4E0018B574 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F6659C862DD42A4E0018B574 /* NicknameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameResponse.swift; sourceTree = "<group>"; };
+		F6659C872DD42A4E0018B574 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		F6659C882DD42A4E0018B574 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		F6659C892DD42A4E0018B574 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		F6659C922DD438150018B574 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		F6659C942DD442480018B574 /* APIWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWelcomeViewController.swift; sourceTree = "<group>"; };
+		F6659C962DD45C4D0018B574 /* APILoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoginViewController.swift; sourceTree = "<group>"; };
+		F6659C982DD464B50018B574 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F6659C9D2DD465360018B574 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F6659C9F2DD46BB70018B574 /* LoginNicknameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNicknameResponse.swift; sourceTree = "<group>"; };
+		F6659CA12DD46C140018B574 /* NicknameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameService.swift; sourceTree = "<group>"; };
+		F6659CA52DD47B020018B574 /* NicknameEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameEditViewController.swift; sourceTree = "<group>"; };
+		F6659CA72DD47B3A0018B574 /* EditNickNameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNickNameService.swift; sourceTree = "<group>"; };
+		F6659CA92DD47DD50018B574 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		F6659CAB2DD482590018B574 /* EditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditResponse.swift; sourceTree = "<group>"; };
 		F665FC442DA95C1600231343 /* AT-SOPT-iOS-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AT-SOPT-iOS-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F665FC562DA95C1900231343 /* Exceptions for "AT-SOPT-iOS-Practice" folder in "AT-SOPT-iOS-Practice" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = F665FC432DA95C1600231343 /* AT-SOPT-iOS-Practice */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F665FC462DA95C1600231343 /* AT-SOPT-iOS-Practice */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F665FC562DA95C1900231343 /* Exceptions for "AT-SOPT-iOS-Practice" folder in "AT-SOPT-iOS-Practice" target */,
-			);
-			path = "AT-SOPT-iOS-Practice";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F665FC412DA95C1600231343 /* Frameworks */ = {
@@ -49,10 +127,195 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6659C372DD387720018B574 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C352DD387720018B574 /* AppDelegate.swift */,
+				F6659C362DD387720018B574 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F6659C3A2DD387720018B574 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C922DD438150018B574 /* UITextField+.swift */,
+				F6659C382DD387720018B574 /* UIFont+.swift */,
+				F6659C392DD387720018B574 /* UIView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F6659C442DD387720018B574 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C3B2DD387720018B574 /* Pretendard-Black.ttf */,
+				F6659C3C2DD387720018B574 /* Pretendard-Bold.ttf */,
+				F6659C3D2DD387720018B574 /* Pretendard-ExtraBold.ttf */,
+				F6659C3E2DD387720018B574 /* Pretendard-ExtraLight.ttf */,
+				F6659C3F2DD387720018B574 /* Pretendard-Light.ttf */,
+				F6659C402DD387720018B574 /* Pretendard-Medium.ttf */,
+				F6659C412DD387720018B574 /* Pretendard-Regular.ttf */,
+				F6659C422DD387720018B574 /* Pretendard-SemiBold.ttf */,
+				F6659C432DD387720018B574 /* Pretendard-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F6659C462DD387720018B574 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C3A2DD387720018B574 /* Extension */,
+				F6659C442DD387720018B574 /* Fonts */,
+				F6659C452DD387720018B574 /* Assets.xcassets */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F6659C4A2DD387720018B574 /* Week1 */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C472DD387720018B574 /* LoginViewController.swift */,
+				F6659C482DD387720018B574 /* ViewController.swift */,
+				F6659C492DD387720018B574 /* WelcomeViewController.swift */,
+			);
+			path = Week1;
+			sourceTree = "<group>";
+		};
+		F6659C4D2DD387720018B574 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C4B2DD387720018B574 /* AutoLayoutViewController.swift */,
+				F6659C4C2DD387720018B574 /* ScrollViewController.swift */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		F6659C502DD387720018B574 /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C4E2DD387720018B574 /* LoginViewController_Closure.swift */,
+				F6659C4F2DD387720018B574 /* WelcomeViewController_Closure.swift */,
+			);
+			path = Closure;
+			sourceTree = "<group>";
+		};
+		F6659C532DD387720018B574 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C512DD387720018B574 /* LoginViewController_Delegate.swift */,
+				F6659C522DD387720018B574 /* WelcomeViewController_Delegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F6659C542DD387720018B574 /* Week2 */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C4D2DD387720018B574 /* AutoLayout */,
+				F6659C502DD387720018B574 /* Closure */,
+				F6659C532DD387720018B574 /* Delegate */,
+			);
+			path = Week2;
+			sourceTree = "<group>";
+		};
+		F6659C582DD387720018B574 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C552DD387720018B574 /* ItemCollectionViewCell.swift */,
+				F6659C562DD387720018B574 /* ItemModel.swift */,
+				F6659C572DD387720018B574 /* ItemViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F6659C5C2DD387720018B574 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C592DD387720018B574 /* ChatModel.swift */,
+				F6659C5A2DD387720018B574 /* ChatTableViewCell.swift */,
+				F6659C5B2DD387720018B574 /* ChatViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F6659C5D2DD387720018B574 /* Week3 */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C582DD387720018B574 /* CollectionView */,
+				F6659C5C2DD387720018B574 /* TableView */,
+			);
+			path = Week3;
+			sourceTree = "<group>";
+		};
+		F6659C612DD387720018B574 /* AT-SOPT-iOS-Practice */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C372DD387720018B574 /* Application */,
+				F6659C462DD387720018B574 /* Global */,
+				F6659C4A2DD387720018B574 /* Week1 */,
+				F6659C542DD387720018B574 /* Week2 */,
+				F6659C5D2DD387720018B574 /* Week3 */,
+				F6659C812DD3877A0018B574 /* Week4 */,
+				F6659C5E2DD387720018B574 /* Info.plist */,
+				F6659C602DD387720018B574 /* LaunchScreen.storyboard */,
+			);
+			path = "AT-SOPT-iOS-Practice";
+			sourceTree = "<group>";
+		};
+		F6659C812DD3877A0018B574 /* Week4 */ = {
+			isa = PBXGroup;
+			children = (
+				F6659C9C2DD465060018B574 /* View */,
+				F6659C9B2DD464E30018B574 /* Network */,
+				F6659C9A2DD464C40018B574 /* Models */,
+			);
+			path = Week4;
+			sourceTree = "<group>";
+		};
+		F6659C9A2DD464C40018B574 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6659CAB2DD482590018B574 /* EditResponse.swift */,
+				F6659C9F2DD46BB70018B574 /* LoginNicknameResponse.swift */,
+				F6659C862DD42A4E0018B574 /* NicknameResponse.swift */,
+				F6659C882DD42A4E0018B574 /* RequestModel.swift */,
+				F6659C892DD42A4E0018B574 /* ResponseModel.swift */,
+				F6659C982DD464B50018B574 /* LoginRequest.swift */,
+				F6659CA92DD47DD50018B574 /* UserSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6659C9B2DD464E30018B574 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F6659CA72DD47B3A0018B574 /* EditNickNameService.swift */,
+				F6659CA12DD46C140018B574 /* NicknameService.swift */,
+				F6659C9D2DD465360018B574 /* AuthService.swift */,
+				F6659C822DD42A4E0018B574 /* GetInfoService.swift */,
+				F6659C852DD42A4E0018B574 /* NetworkError.swift */,
+				F6659C872DD42A4E0018B574 /* RegisterService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F6659C9C2DD465060018B574 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6659CA52DD47B020018B574 /* NicknameEditViewController.swift */,
+				F6659C962DD45C4D0018B574 /* APILoginViewController.swift */,
+				F6659C942DD442480018B574 /* APIWelcomeViewController.swift */,
+				F6659C832DD42A4E0018B574 /* InfoViewController.swift */,
+				F6659C842DD42A4E0018B574 /* APISignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F665FC3B2DA95C1600231343 = {
 			isa = PBXGroup;
 			children = (
-				F665FC462DA95C1600231343 /* AT-SOPT-iOS-Practice */,
+				F6659C612DD387720018B574 /* AT-SOPT-iOS-Practice */,
 				F665FC452DA95C1600231343 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,9 +342,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F665FC462DA95C1600231343 /* AT-SOPT-iOS-Practice */,
 			);
 			name = "AT-SOPT-iOS-Practice";
 			packageProductDependencies = (
@@ -135,6 +395,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6659C622DD387720018B574 /* Pretendard-Black.ttf in Resources */,
+				F6659C632DD387720018B574 /* Pretendard-Bold.ttf in Resources */,
+				F6659C642DD387720018B574 /* Pretendard-ExtraBold.ttf in Resources */,
+				F6659C652DD387720018B574 /* Pretendard-ExtraLight.ttf in Resources */,
+				F6659C662DD387720018B574 /* Pretendard-Light.ttf in Resources */,
+				F6659C672DD387720018B574 /* Pretendard-Medium.ttf in Resources */,
+				F6659C682DD387720018B574 /* Pretendard-Regular.ttf in Resources */,
+				F6659C692DD387720018B574 /* Pretendard-SemiBold.ttf in Resources */,
+				F6659C6A2DD387720018B574 /* Pretendard-Thin.ttf in Resources */,
+				F6659C6B2DD387720018B574 /* Assets.xcassets in Resources */,
+				F6659C6D2DD387720018B574 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +416,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6659C6E2DD387720018B574 /* AppDelegate.swift in Sources */,
+				F6659CAA2DD47DD50018B574 /* UserSession.swift in Sources */,
+				F6659C6F2DD387720018B574 /* SceneDelegate.swift in Sources */,
+				F6659CA62DD47B020018B574 /* NicknameEditViewController.swift in Sources */,
+				F6659C702DD387720018B574 /* UIFont+.swift in Sources */,
+				F6659C712DD387720018B574 /* UIView+.swift in Sources */,
+				F6659C722DD387720018B574 /* LoginViewController.swift in Sources */,
+				F6659C732DD387720018B574 /* ViewController.swift in Sources */,
+				F6659CA02DD46BC10018B574 /* LoginNicknameResponse.swift in Sources */,
+				F6659C742DD387720018B574 /* WelcomeViewController.swift in Sources */,
+				F6659C972DD45C590018B574 /* APILoginViewController.swift in Sources */,
+				F6659C752DD387720018B574 /* AutoLayoutViewController.swift in Sources */,
+				F6659C762DD387720018B574 /* ScrollViewController.swift in Sources */,
+				F6659C772DD387720018B574 /* LoginViewController_Closure.swift in Sources */,
+				F6659CAC2DD482590018B574 /* EditResponse.swift in Sources */,
+				F6659C782DD387720018B574 /* WelcomeViewController_Closure.swift in Sources */,
+				F6659C792DD387720018B574 /* LoginViewController_Delegate.swift in Sources */,
+				F6659C8A2DD42A4E0018B574 /* NicknameResponse.swift in Sources */,
+				F6659C8B2DD42A4E0018B574 /* InfoViewController.swift in Sources */,
+				F6659C9E2DD465360018B574 /* AuthService.swift in Sources */,
+				F6659C952DD4425E0018B574 /* APIWelcomeViewController.swift in Sources */,
+				F6659C8C2DD42A4E0018B574 /* NetworkError.swift in Sources */,
+				F6659CA22DD46C140018B574 /* NicknameService.swift in Sources */,
+				F6659C8D2DD42A4E0018B574 /* ResponseModel.swift in Sources */,
+				F6659C8E2DD42A4E0018B574 /* APISignUpViewController.swift in Sources */,
+				F6659C8F2DD42A4E0018B574 /* RequestModel.swift in Sources */,
+				F6659C902DD42A4E0018B574 /* GetInfoService.swift in Sources */,
+				F6659C912DD42A4E0018B574 /* RegisterService.swift in Sources */,
+				F6659C7A2DD387720018B574 /* WelcomeViewController_Delegate.swift in Sources */,
+				F6659C7B2DD387720018B574 /* ItemCollectionViewCell.swift in Sources */,
+				F6659C7C2DD387720018B574 /* ItemModel.swift in Sources */,
+				F6659C932DD4381E0018B574 /* UITextField+.swift in Sources */,
+				F6659C7D2DD387720018B574 /* ItemViewController.swift in Sources */,
+				F6659C7E2DD387720018B574 /* ChatModel.swift in Sources */,
+				F6659C7F2DD387720018B574 /* ChatTableViewCell.swift in Sources */,
+				F6659C802DD387720018B574 /* ChatViewController.swift in Sources */,
+				F6659C992DD464B50018B574 /* LoginRequest.swift in Sources */,
+				F6659CA82DD47B440018B574 /* EditNickNameService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6659C602DD387720018B574 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6659C5F2DD387720018B574 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F665FC582DA95C1900231343 /* Debug */ = {
